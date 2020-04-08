@@ -17,8 +17,8 @@ public class Principal {
 		BufferedReader scan =  new BufferedReader(in);
 		
 	
-		Endereco en1 = new Endereco("Rua Jo„o", "Travessa do Rato",57, "Bonsucesso", "Olinda", "Pernambuco", "53240-030");
-		Endereco en2 = new Endereco("Rua Jo„o", "Travessa do Rato",100, "Bonsucesso", "Olinda", "Pernambuco", "53240-030");
+		Endereco en1 = new Endereco("Rua Jo√£o", "Travessa do Rato",57, "Bonsucesso", "Olinda", "Pernambuco", "53240-030");
+		Endereco en2 = new Endereco("Rua Jo√£o", "Travessa do Rato",100, "Bonsucesso", "Olinda", "Pernambuco", "53240-030");
 		Agencia ag1 = new Agencia("Agencia Olinda", "3438-7964", en2);
 		Cliente cl1 = new Cliente("Yuri", "078.456.421-64", en1);
 		Cliente cl2 = new Cliente("Ewerton", "645.456.456-79", en1);
@@ -31,7 +31,8 @@ public class Principal {
 		conta2.depositar(99.35,conta2);
 		conta1.transferir(100, conta1, conta2);
 		conta2.transferir(800, conta2, conta1);
-		
+		conta1.visualizar(conta1);
+		conta2.visualizar(conta2);
 		
 	}
 
