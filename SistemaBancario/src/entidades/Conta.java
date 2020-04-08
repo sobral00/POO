@@ -27,19 +27,19 @@ public class Conta {
 	
 	public void depositar(double valor, Conta x) {
 		this.saldo += valor;
-		System.out.println("Após depositar R$" + valor + " a conta de " + x.cliente.getNome() + " tem " + x.getSaldo() + " Reais");
+		System.out.println("ApÃ³s depositar R$" + valor + " a conta de " + x.cliente.getNome() + " tem " + x.getSaldo() + " Reais");
 	}
 	
 	public void debitar(double valor, Conta x) {
 		this.saldo -= valor;
-		System.out.println("Após debitar R$" + valor + " a conta de " + x.cliente.getNome() + " tem " + x.getSaldo() + " Reais");
+		System.out.println("ApÃ³s debitar R$" + valor + " a conta de " + x.cliente.getNome() + " tem " + x.getSaldo() + " Reais");
 	}
 	
 	public void transferir(double valor, Conta x, Conta y) {
 		x.debitar(valor, x);	
 		y.depositar(valor, y);
 		
-		System.out.println(x.cliente.getNome() + " Depositou R$" + valor + " na conta de " + y.cliente.getNome() );
+		System.out.println(x.cliente.getNome() + " transferiu R$" + valor + " para a conta de " + y.cliente.getNome() );
 	}
 		
 	public int getNum() {
